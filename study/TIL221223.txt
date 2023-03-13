@@ -1,0 +1,63 @@
+0으로만 구성된 n만큼 길이의 배열 선언하기
+```
+n = 9
+arr = [0] * 9
+print(arr) # [0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+```
+
+0이 아니라 다른 값으로도 가능하다 / boolean 값도 가능
+```
+n = 9
+arr = [False] * n
+print(arr)
+```
+
+0로만 구성된 (n,n) 행렬을 배열로 선언하기
+n = 9
+matrix = [ [0] * n ] * n
+print(matrix)
+
+2차원 리스트 생성 및 입력 받기 - https://ctdlog.tistory.com/24
+| 0 | 1 | 2 | 3 |
+| 4 | 5 | 6 | 7 |
+
+리스트 초기화
+arr = [0, 0, 0, 0, 0]
+arr = [0] * 5
+arr = [i for i in range(2,9) if i % 2 == 0]
+# [2, 4, 6, 8]
+
+brr = [ [1, 2, 3], [1, 2, 3], [1, 2, 3] ]
+brr = [ [1, 2, 3] ] * 3
+brr = [ [1, 2, 3] for i in range(3) ]
+brr = [ [i, j]  for i in range(3) for j in range(2) ]
+
+https://shoark7.github.io/programming/python/about-list-comprehension-python
+
+
+2차원 리스트 입력 받기
+3 4
+0 1 0 0
+0 0 0 0
+0 0 1 0
+
+다음과 같이, 첫째 줄에 2차원 리스트의 행과 열이 주어지고, 두 번째 줄부터 행렬의 데이터가 주어질 경우,
+
+n, m = map(int, input().split())
+
+#1
+mylist = [ 0 for _ in range(n) ]
+for i in range(n):
+    mylist[i] = list(map(int, input().split()))
+
+#2
+mylist = []
+for i in range(n):
+    mylist.append(list(map(int, input().split())))
+
+#3
+mylist = [ list(map((int, input().split())) for _ in range(n) ]
+
+
+https://ctdlog.tistory.com/24
