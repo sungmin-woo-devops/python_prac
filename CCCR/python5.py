@@ -2,7 +2,7 @@
 # 문자열 자료형을 만들기 위해서는 따옴표를 사용
 
 a = "hello world"
-b = "hello world"
+b = 'hello world'
 
 print(a)
 print(b)
@@ -42,13 +42,12 @@ head = "python"
 tail = " is fun"
 print(head + tail)
 
-
 # 문자열 곱하기
 print(head * 3)
 
 # 문자열 곱하기 응용
 print("=" * 20)
-print("my program(v.11)")
+print("my program(v11)")
 print("=" * 20)
 
 # 문자열의 길이 구하기
@@ -59,10 +58,10 @@ print(len(a))
 # 연산하고 싶은 경우 데이터 유형을 일치시켜줘야 함
 a = 1
 b = "python"
-# print(a+b)
+# print(a+b) # 실행 시 에러 발생: TypeError: unsupported operand type(s) for +: 'int' and 'str'
 
 # 문자열은 인덱싱과 슬라이싱이라는 개념이 존재
-# 인덱싱은 자리에 맞춰 한가지 문자를 출력
+# 인덱싱은 자리에 맞춰 한 가지 문자를 출력
 # 슬라이싱은 자리에 맞춰 여러 문자를 출력
 # 원하는 데이터를 추출, 가공하는데 사용된다.
 
@@ -95,8 +94,3 @@ print("I eat 3 apples")
 # 바로 대입
 print("I eat %d apples" % 3)
 print("I eat %s apples" % "three")
-
-
-
-
-

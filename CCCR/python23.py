@@ -23,3 +23,10 @@ echo_test()
 # echo.py, wav.py 모두 불러와 사용
 from game.sound import *
 echo.echo_test()
+
+########################################################################
+
+# 추가로 읽어볼만한 자료
+
+# 1. import * 를 지양해야 하는 이유
+# https://stackoverflow.com/questions/2386714/why-is-import-bad

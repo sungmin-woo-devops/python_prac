@@ -38,7 +38,7 @@ add(5, 6)
 print(result)
 
 # 실험
-# 전역 변수와 지역 변수가 있는 상태에서 global로 가져올 경우 결괴
+# 전역 변수와 지역 변수가 있는 상태에서 global로 가져올 경우 결과
 '''
 str = "global variable"
 

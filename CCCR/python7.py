@@ -65,7 +65,7 @@ print(a)
 
 # 문자열은 요소 수정 불가
 a = "pithon"
-# a[1] = 'y'
+# a[1] = 'y' # TypeError: 'str' object does not support item assignment
 a = a[0] + 'y' + a[2:]
 print(a)
 

@@ -64,8 +64,8 @@ print(a)
 
 # 라스트 요소 끄집어내기(pop)
 a = [1,2,3]
-print(a.pop()) # 맨뒤 요소 추출(return) 
-print(a)       # 기존 리스트에서 제거
+print(a.pop())  # 맨뒤 요소 추출(return) 
+print(a)        # 기존 리스트에서 제거
 
 a = [1,2,3]
 print(a.pop(1)) # 인덱스 1번의 요소를 pop

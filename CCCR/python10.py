@@ -17,7 +17,7 @@ dic = {
 print(dic)
 print(type(dic))
 # {'name': 'sungmin', 'phone': '01022223333', 'birth': '990612'}
-# <class 'dict'
+# <class 'dict'>
 
 
 # 딕셔너리 안에 리스트 또한 값으로 사용 가능
@@ -95,7 +95,6 @@ print(dic.get('name'))
 
 # print(dic['nokey']) # KeyError: 'name' - 에러 발생 - 코드 멈춰
 print(dic.get('nokey')) # None - 에러 발생 X - 코드 진행해
-
 
 # 키가 딕셔너리 안에 있는지 확인(KEY in DICT)
 print('name' in dic) # True

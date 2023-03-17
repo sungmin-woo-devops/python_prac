@@ -70,6 +70,8 @@ print(a.count("b"))
 # (첫) 문자 위치 알려주기(find)
 a = "python is the best choice"
 print(a.find("b"))
+print(a.find("python"))
+print(a.find("is"))
 
 # 문자 위치 알려주기(index)
 a = "Python is the best choice"
@@ -86,7 +88,7 @@ print(a.find("j"))    # -1 출력
 a = ","
 print(a.join("abcd"))
 
-# 경로 표현시 join을 자주 사용하다.
+# 경로 표현 시 join을 자주 사용한다.
 # /home/user/project/mysite/pybo
 # 문자열들을 리스트로 묶어줘야 한다. 
 a = "/"
@@ -115,11 +117,11 @@ print(a.strip())
 # 문자열 변경(replace)
 a = "Life is too short"
 print(a.replace("Life", "This Pen"))
+print(a.replace(" ", "/"))
 
 # 문자열 나누기(split)
 a = "Life is too short"
 print(a.split(" "))
-
 
 #  /home/user/project/mysite/pybo
 a = "/home/user/project/mysite/pybo"

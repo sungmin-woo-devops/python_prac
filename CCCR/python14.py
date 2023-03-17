@@ -41,8 +41,8 @@ else:
 # a or b -> 하나만 참이면 참
 # not a -> a가 참이면 거짓
 
-# 현금 2000원 보유중이고 카드를 보유하고 있음
-# 돈이 3000원 이상 있거나 카드를 보유중이면 택시를 타고 아니면 걸어 가야 하는 상황
+# 현금 2000원 보유 중이고 카드를 보유하고 있음
+# 돈이 3000원 이상 있거나 카드를 보유 중이면 택시를 타고 아니면 걸어 가야 하는 상황
 cash = 2000
 card = True
 if cash >= 3000 or card == True:
@@ -105,7 +105,7 @@ else:
     print("걸어 가라")
 '''
 
-# 반복문의 break와 비슷한 개념(pass는 이후 조건문 실행 X)
+# 반복문의 break와 비슷한 개념(pass 이후의 조건문은 실행 X)
 # continue는 반복문에서 사용하는 개념으로 반복문 처음으로 돌아간다.
 pocket = ['path', 'money', 'cellphone']
 if 'money' in pocket:
@@ -114,7 +114,7 @@ else:
     print("걷기")
 
 # 만약 pass 구문 앞에 문장이 있을 경우?
-# pass가 단독으로 쓰인 경우 하위항목은 수행되지 않음
+# pass가 단독으로 쓰인 경우 하위 항목은 수행되지 않음
 pocket = ['path', 'money', 'cellphone']
 if 'money' in pocket:
     pass

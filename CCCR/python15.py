@@ -35,7 +35,7 @@ for i in test_tuple:
     print(i, end="\t")
 
 print("")
-# gor문 변수에 다양한 자료형 사용 가능
+# for문 변수에 다양한 자료형 사용 가능
 a = [(1,2), (3,4), (5,6)]
 for (a, b) in a:
     print(a + b)
@@ -63,6 +63,14 @@ for score in scores:
     else:
         print(f'{number}번 학생은 불합격입니다.')
 
+# 3번 풀이
+scores = [90, 25, 67, 45, 80]
+
+for i in range(len(scores)):
+    if scores[i] >= 60:
+        print(f"{i+1}번 학생은 합격입니다.")
+    else:
+        print(f"{i+1}번 학생은 불합격입니다.")
 
 # continue
 # 반복문을 끝내지 않고 반복문 초기로 돌아가게 하는 구문
@@ -72,6 +80,8 @@ for i in [1,2,3,4,5]:
         print(i)
     else:
         continue
+
+scores = [90, 25, 67, 45, 80]
 
 number = 0
 for score in scores:

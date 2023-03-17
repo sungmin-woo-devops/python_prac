@@ -37,15 +37,24 @@ print(s1 - s2)
 print(s1.difference(s2))
 
 # 집합 관련 함수들
-# 값 1개 추가
+# add - 집합에 원소 1개 추가
 s1 = set([1,2,3])
 s1.add(4)
 print(s1)
 
-# 값 여러개 추가
+# add - 한 번에 2개 이상의 원소 추가 불가능
+# s1.add(7,8) # TypeError: set.add() takes exactly one argument (2 given)
+print(s1)
+
+# add 대신 update 함수를 사용하면 set에 한 번에 여러 개의 원소 추가 가능
+
+# update - 값 여러개 추가
 s1 = set([1,2,3])
 s1.update([4,5,6])
 print(s1)
+
+# update의 인자는 iterable 타입이어야 한다.
+# s1.update(7,8,9) # TypeError: 'int' object is not iterable
 
 # 요소 제거
 s1 = set([1,2,3])
