@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>css test</title>
+        <style>
+            p {
+                /* !important: 선택자 우선순위를 가장 높게 지정 */
+                color: blue !important;
+            }
+            .redtext {
+                /* !important가 여러개 붙을 시 붙는 요소들 중에서 */
+                /* id > 클래스 > 태그 우선순위를 따짐 */
+                color: red !important;
+            }
+            #yellowtext {
+                color: yellow;
+            }
+            /* 교집합: h1 태그이면서 greentext 클래스 */
+            h3.greentext {
+                color: green;
+            }
+            /* 합집합: h4 또는 h5, purpletext */
+            h4, h5, .purpletext {
+                color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>과일</h1>
+        <p class="redtext" id="yellowtext" style="color: purple;">딸기</p>
+        <p class="redtext" id="yellowtext">키위</p>
+        <p clas="redtext">포도</p>
+        <p>참외</p>
+        <p>몰디브</p>
+        <!-- 우선순위: 인라인 스타일 > id > class -->
+    </body>
+</html>

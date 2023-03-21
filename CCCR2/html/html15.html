@@ -1,0 +1,39 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>html 텍스트</title>
+    </head>
+    <body>
+        <h3>메일링 리스트 등록</h3>
+        <!-- post 방식 입력 패턴 1 - 메일 -->
+        <form method="post" action="register.php">
+            <label for="mail">메일 주소</label>
+            <input type="email" id="mail">
+            <input type="submit" value="제출">
+            <input type="reset" value="다시 작성">
+        
+            <!-- 파일을 받아 register.php에 넘김 -->
+            <label for="reg">파일 등록</label>
+            <input type="file" id="reg">
+
+            <!-- 여러줄 입력을 받을 수 있음 -->
+            <!-- readonly 속성을 넣어 '이용약관'과 같은 부분을 만들 수 있다. -->
+            <textarea cols="60" rows="5" readonly>
+이곳은
+입력을 할 수 있는
+textarea 영역입니다.
+            </textarea>
+        </form>
+    </body>
+</html>
+
+<!-- 구간을 나눠 부분적으로 CSS를 적용시켜야 하는 경우 -->
+<!-- div : 블록형 영역 구분 / span: 인라인형 구분 -->
+<!-- <p><span>텍스트 1</span>텍스트 2</p> -->
+
+<!-- 
+<div>
+    각종 태그들
+</div> 
+-->

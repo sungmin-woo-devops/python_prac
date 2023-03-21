@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>css test</title>
+        <style>
+            p {
+                color: blue;
+            }
+            .redtext {
+                color: red;
+            }
+            #yellowtext {
+                color: yellow;
+            }
+            /* 교집합: h1 태그이면서 greentext 클래스 */
+            h3.greentext {
+                color: green;
+            }
+            /* 합집합: h4 또는 h5, purpletext */
+            h4, h5, .purpletext {
+                color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>과일</h1>
+        <h2 class="redtext">딸기</h2>
+        <h3 class="greentext">키위</h3>
+        <h4>포도</h4>
+        <p id="yellowtext">참외</p>
+        <p>몰디브</p>
+        
+    </body>
+</html>

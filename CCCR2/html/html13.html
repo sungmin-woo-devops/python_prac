@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>html 텍스트</title>
+        <style>
+            ul {
+                list-style: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="post" action="login.php">
+            <ul>
+                <li>
+                    <label for="id">id
+                        <input type="text" id="id">
+                    </label>
+                </li>
+
+                <!-- label과 input 태그가 분리된 형식 - 꾸밈 용이 -->
+                <li>
+                    <label for="password">pw</label>
+                    <input type="password" id="password">
+                </li>
+                <li>
+                    <input type="submit" value="로그인">
+                </li>
+            </ul>
+        </form>
+    </body>
+</html>

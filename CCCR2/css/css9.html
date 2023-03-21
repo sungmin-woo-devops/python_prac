@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>css test</title>
+        <style>
+            @import url('https://fonts.googleapis.com/earlyaccess/jejuhallasan.css');
+            .halla-font {
+                font-family: "Jeju Hallasan", "굴림";
+            }
+            @font-face {
+                font-family: 'trana';
+                src: local('trana'),
+                     url('trana.eot'),
+                     url('trana.woff') format('woff'),
+                     url('trana.ttf') format('truetype');
+            }
+            .w-font {
+                font-family: 'trana';
+
+            }
+        </style>
+    </head>
+    <body>
+        <p>기본 글꼴</p>
+        <p class="halla-font">제주 한라산 글꼴</p>
+        <p class="w-font">trana</p>
+    </body>
+</html>

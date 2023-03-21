@@ -1,0 +1,67 @@
+<!-- input 태그 -->
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>html 텍스트</title>
+    </head>
+    <body>
+        <ul>
+            <li>
+                <!-- 입력 박스 오른쪽에 삭제용 X 버튼이 존재한다. -->
+                <label for="search">찾기</label>
+                <input type="search" id="search">
+            </li>
+            <li>
+                <!-- http 또는 https이 포함된 정확한 주소를 작성해줘야 한다. -->
+                <label for="url">url 주소</label>
+                <input type="url" value="https://www.naver.com">
+            </li>
+            <li>
+                <!-- 골벵이(@) 표시를 넣어줘야 한다. -->
+                <label for="email">email 주소</label>
+                <input type="email" id="email">
+            </li>
+            <li>
+                <!-- 국가마다 다름 - 텍스트와 비슷하게 평문으로 입력하여도 상관 없음 -->
+                <!-- 텍스트와 다르게 직접 전화를 걸 수 있다. -->
+                <label for="phone">전화번호</label>
+                <input type="tel" id="phone">
+            </li>
+            <li>
+                <!-- 숫자 입력 가능한 스핀 박스 제공 -->
+                <label for="num">숫자</label>
+                <input type="number">
+            </li>
+            <li>
+                <label for=""></label>
+                <input type="">
+            </li>
+
+            <!-- 선택에 대한 처리를 해야하는 경우 라디오 박스 또는 체크박스를 사용한다. -->
+
+            <h3>라디오 박스</h3>
+            <!-- 여러 항목 중 하나를 고름 -->
+            <label for="r1">C<input type="radio" name="lang" id="r1"</label>
+            <label for="r2">Python<input type="radio" name="lang" id="r2"></label>
+            <label for="r3">Java<input type="radio" name="lang" id="r3"></label>
+            
+            <li>
+                <input type="submit" value="로그인">
+            </li>     
+
+            <h3>체크박스</h3>
+            <!-- name, id 모두 고유하게 설정 -->
+            <label for="r4">C<input type="checkbox" name="lang2" id="r4"</label>
+            <label for="r5">Python<input type="checkbox" name="lang3" id="r5"></label>
+            <label for="r6">Java<input type="checkbox" name="lang4" id="r6"></label>
+
+            <li>
+                <input type="submit" value="로그인">
+            </li>     
+
+
+            <!-- 다중 선택 가능 -->
+        </ul>
+    </body>
+</html>
