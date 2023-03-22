@@ -1,0 +1,3 @@
+# Arch Linux
+$ sudo pacman -S python-pip
+$ pip isntall beautifulsoup4
